@@ -2,14 +2,14 @@
 
 Este repositorio contiene un script de Python para convertir texto a voz y combinar los archivos de audio en formato MP3 utilizando `gTTS` y `pydub`.
 
-## Requisitos
+# Requisitos
 
 - Python 3.6 o superior
 - ffmpeg
 
-## Instalación
+# Instalación
 
-### Paso 1: Clonar el repositorio
+## Paso 1: Clonar el repositorio
 
 Clona este repositorio en tu máquina local.
 
@@ -17,26 +17,26 @@ Clona este repositorio en tu máquina local.
 
 ```cd <NOMBRE_DEL_REPOSITORIO>```
 
-### Paso 2: Instalar las dependencias
+## Paso 2: Instalar las dependencias
 
 Instala las dependencias de Python utilizando `pip`.
 
 ```pip install -r requirements.txt```
 
 
-## Paso 3: Descargar e Instalar ffmpeg Windows
-# Paso 1: Descargar ffmpeg para Windows
+# Paso 3: Descargar e Instalar ffmpeg Windows
+## Paso 1: Descargar ffmpeg para Windows
 - Descargar ffmpeg desde [ffmpeg.org/download.html](https://ffmpeg.org/download.html).
 - Haz clic en "Windows" en la sección "Get packages & executable files".
 - Selecciona "Windows builds by BtbN".
 - Descarga el archivo zip correspondiente (ejemplo "ffmpeg-master-latest-win64-gpl.zip").
 
-# Paso 2: Descomprimir ffmpeg
+## Paso 2: Descomprimir ffmpeg
 
 - Descomprimir el archivo:
 - Extrae el contenido del archivo zip descargado (por ejemplo, ffmpeg-master-latest-win64-gpl.zip) en una ubicación adecuada en tu disco duro, como C:\ffmpeg.
 
-# Paso 3: Configurar ffmpeg
+## Paso 3: Configurar ffmpeg
 
 Asegúrate de que `ffmpeg` esté instalado y en el PATH del sistema. Puedes incluir la carpeta `ffmpeg` proporcionada en este repositorio y agregarla al PATH.
 
@@ -57,22 +57,22 @@ Asegúrate de que `ffmpeg` esté instalado y en el PATH del sistema. Puedes incl
 ```ffprobe -version```
 
 
-## Paso 3.1 (Opcional) : Descargar e Instalar ffmpeg Linux
+# Paso 3.1 (Opcional) : Descargar e Instalar ffmpeg Linux
 
-# Paso 1: Descargar ffmpeg para Linux
+## Paso 1: Descargar ffmpeg para Linux
 - Abre una terminal y ejecuta el siguiente comando para instalar `ffmpeg`:
 
 ```sudo apt update```
 ```sudo apt install ffmpeg```
 
-# Paso 1: Verifica la instalación de `ffmpeg`:
+## Paso 1: Verifica la instalación de `ffmpeg`:
 
 ```ffmpeg -version```
 ```ffprobe -version```
 
 
 
-## Uso
+# Uso
 
 Para usar el script y convertir texto a voz, sigue los siguientes pasos:
 
@@ -81,13 +81,13 @@ Para usar el script y convertir texto a voz, sigue los siguientes pasos:
 3. En la raíz del script verás un `output.mp3` o el nombre que cambiaste en la variable `filename`.
 
 
-## Convertir MP3 a WAV (Opcional)
+##Convertir MP3 a WAV (Opcional)
 Si necesitas convertir el archivo MP3 resultante a WAV, puedes usar ffmpeg desde la línea de comandos:
 ```ffmpeg -i output.mp3 output.wav```
 
 
 
-## Problemas Comunes
+# Problemas Comunes
 
 - `pydub.exceptions.CouldntDecodeError`
 Si encuentras un error relacionado con `ffmpeg` o `ffprobe`, asegúrate de que `ffmpeg` esté correctamente instalado y en el PATH del sistema.
