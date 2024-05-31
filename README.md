@@ -67,6 +67,3 @@ Si encuentras un error relacionado con `ffmpeg` o `ffprobe`, asegúrate de que `
 - `gTTS` no genera archivos válidos
 Asegúrate de que `gTTS` esté instalado y actualizado. Si el problema persiste, verifica tu conexión a internet ya que `gTTS` requiere acceso a Google Translate.
 
-
-##  Licencia
-Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo LICENSE para más información.
